@@ -81,7 +81,9 @@ export default function Login() {
     localStorage.setItem("usuario", JSON.stringify(usuarioDB));
     setMensagem("✅ Login realizado com sucesso!");
 
-    window.location.replace("/dashboard");
+    setTimeout(() => {
+      window.location.href = "/solicitacoes";
+    }, 1500);
 
     setLoading(false);
   };
