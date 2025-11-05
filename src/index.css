@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Estilos para o tema escuro */
+/* Estilos para o tema escuro */
+.dark {
+  background-color: #1f2937; /* gray-800 */
+  color: #f3f4f6; /* gray-100 */
+}
+
+/* Aplicando estilos de tema escuro para elementos que não usam classes dark: */
+.dark .bg-white {
+  background-color: #1f2937; /* gray-800 */
+}
+
+.dark .bg-gray-50 {
+  background-color: #374151; /* gray-700 */
+}
+
+.dark .text-gray-800 {
+  color: #f3f4f6; /* gray-100 */
+}
+
+.dark .text-gray-700 {
+  color: #f3f4f6; /* gray-100 */
+}
+
+.dark .text-gray-600 {
+  color: #d1d5db; /* gray-300 */
+}
+
+.dark .text-gray-500 {
+  color: #9ca3af; /* gray-400 */
+}
+
+.dark .border-gray-100 {
+  border-color: #4b5563; /* gray-600 */
+}
+
+.dark .border-gray-200 {
+  border-color: #4b5563; /* gray-600 */
+}
+
+.dark .shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.15);
+}
+
+.dark .shadow-md {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -2px rgba(0, 0, 0, 0.15);
+}
+
+.dark input, .dark select, .dark textarea {
+  background-color: #374151; /* gray-700 */
+  color: #f3f4f6; /* gray-100 */
+  border-color: #4b5563; /* gray-600 */
+}
+
+.dark .bg-red-50 {
+  background-color: #450a0a; /* red-950 */
+}
+
+.dark .text-red-600 {
+  color: #fca5a5; /* red-300 */
+}
+
+.dark .hover\:bg-gray-50:hover {
+  background-color: #4b5563; /* gray-600 */
+}
+
+.dark .bg-gray-100 {
+  background-color: #1f2937; /* gray-800 */
+}
+
+.dark .border {
+  border-color: #4b5563; /* gray-600 */
+}
+
+.dark input:focus, .dark select:focus, .dark textarea:focus {
+  border-color: #10b981; /* emerald-500 */
+  ring-color: #10b981; /* emerald-500 */
+}
+
+
+
+body {
+  @apply bg-gray-50 text-gray-900 dark:bg-gray-800 dark:text-gray-100;
+}
+
+/* Animação suave de rotação para o ícone do dashboard e formulários */
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 6s linear infinite;
+}
